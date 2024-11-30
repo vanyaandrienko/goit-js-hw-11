@@ -1,0 +1,27 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Елементи переходять на новий рядок, якщо не вміщаються */
+    gap: 16px;
+    /* Відстань між елементами */
+    justify-content: center;
+    /* Центруємо сітку */
+}
+
+.gallery a {
+    flex: 1 1 calc(25% - 16px);
+    /* Кожен елемент займає приблизно 25% ширини */
+    max-width: calc(25% - 16px);
+    /* Максимальна ширина */
+    border-radius: 8px;
+    /* Закруглені краї */
+    overflow: hidden;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    /* Зображення займає всю ширину контейнера */
+    height: auto;
+    /* Зберігає пропорції */
+}
